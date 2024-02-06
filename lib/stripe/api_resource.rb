@@ -11,6 +11,8 @@ module Stripe
     # for example, where this is allowed.
     attr_accessor :save_with_parent
 
+    OBJECT_NAME = ""
+
     def self.class_name
       name.split("::")[-1]
     end
@@ -23,7 +25,7 @@ module Stripe
       end
       # Namespaces are separated in object names with periods (.) and in URLs
       # with forward slashes (/), so replace the former with the latter.
-      "/v1/#{self::OBJECT_NAME.downcase.tr('.', '/')}s"
+      "/v1/#{OBJECT_NAME.downcase.tr('.', '/')}s"
     end
 
     # A metaprogramming call that specifies that a field of a resource can be

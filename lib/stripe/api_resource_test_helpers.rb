@@ -10,6 +10,8 @@ module Stripe
   class APIResourceTestHelpers
     include Stripe::APIOperations::Request
 
+    RESOURCE_CLASS = nil
+
     def initialize(resource)
       @resource = resource
     end
@@ -27,12 +29,12 @@ module Stripe
     # adds a `capture` class method to the resource class that, when called,
     # will send a POST request to `/v1/<object_name>/capture`.
     def self.custom_method(name, http_verb:, http_path: nil)
-      Util.custom_method self::RESOURCE_CLASS, self, name, http_verb, http_path
+      Util.custom_method @resource, self, name, http_verb, http_path
     end
 
     def self.resource_url
       "/v1/test_helpers/" \
-        "#{self::RESOURCE_CLASS::OBJECT_NAME.downcase.tr('.', '/')}s"
+        "#{@resource.OBJECT_NAME.downcase.tr('.', '/')}s"
     end
 
     def resource_url
