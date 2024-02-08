@@ -20,6 +20,10 @@ module Stripe
 
     OBJECT_NAME = "transfer"
 
+    def self.object_name
+      "transfer"
+    end
+
     nested_resource_class_methods :reversal, operations: %i[create retrieve update list]
 
     # To send funds from your Stripe account to a connected account, you create a new transfer object. Your [Stripe balance](https://stripe.com/docs/api#balance) must be able to cover the transfer amount, or you'll receive an “Insufficient Funds” error.

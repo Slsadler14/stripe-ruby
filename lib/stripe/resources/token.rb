@@ -27,6 +27,10 @@ module Stripe
 
     OBJECT_NAME = "token"
 
+    def self.object_name
+      "token"
+    end
+
     # Creates a single-use token that represents a bank account's details.
     # You can use this token with any API method in place of a bank account dictionary. You can only use this token once. To do so, attach it to a [Custom account](https://stripe.com/docs/api#accounts).
     def self.create(params = {}, opts = {})

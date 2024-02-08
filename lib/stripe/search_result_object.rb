@@ -6,7 +6,10 @@ module Stripe
     include Stripe::APIOperations::Search
     include Stripe::APIOperations::Request
 
-    OBJECT_NAME = "search_result"
+    # OBJECT_NAME = "search_result"
+    def self.object_name
+      "search_result"
+    end
 
     # This accessor allows a `SearchResultObject` to inherit various filters
     # that were given to a predecessor. This allows for things like consistent

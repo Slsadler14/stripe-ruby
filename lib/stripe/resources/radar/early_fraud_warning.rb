@@ -12,6 +12,10 @@ module Stripe
 
       OBJECT_NAME = "radar.early_fraud_warning"
 
+      def self.object_name
+        "radar.early_fraud_warning"
+      end
+
       # Returns a list of early fraud warnings.
       def self.list(filters = {}, opts = {})
         request_stripe_object(

@@ -11,6 +11,10 @@ module Stripe
 
     OBJECT_NAME = "promotion_code"
 
+    def self.object_name
+      "promotion_code"
+    end
+
     # A promotion code points to a coupon. You can optionally restrict the code to a specific customer, redemption limit, and expiration date.
     def self.create(params = {}, opts = {})
       request_stripe_object(method: :post, path: "/v1/promotion_codes", params: params, opts: opts)

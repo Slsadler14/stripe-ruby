@@ -9,6 +9,6 @@ codegen-format:
 
 ci-test:
 	bundle install && bundle exec rake test
-	srb tc
+	bundle exec srb tc
 
 test: ci-test

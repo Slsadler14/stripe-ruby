@@ -21,6 +21,10 @@ module Stripe
 
       OBJECT_NAME = "identity.verification_session"
 
+      def self.object_name
+        "identity.verification_session"
+      end
+
       # A VerificationSession object can be canceled when it is in requires_input [status](https://stripe.com/docs/identity/how-sessions-work).
       #
       # Once canceled, future submission attempts are disabled. This cannot be undone. [Learn more](https://stripe.com/docs/identity/verification-sessions#cancel).

@@ -21,6 +21,10 @@ module Stripe
 
     OBJECT_NAME = "payment_intent"
 
+    def self.object_name
+      "payment_intent"
+    end
+
     # Manually reconcile the remaining amount for a customer_balance PaymentIntent.
     def apply_customer_balance(params = {}, opts = {})
       request_stripe_object(

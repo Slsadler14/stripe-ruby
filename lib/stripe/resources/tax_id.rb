@@ -11,6 +11,10 @@ module Stripe
 
     OBJECT_NAME = "tax_id"
 
+    def self.object_name
+      "tax_id"
+    end
+
     def resource_url
       if !respond_to?(:customer) || customer.nil?
         raise NotImplementedError,

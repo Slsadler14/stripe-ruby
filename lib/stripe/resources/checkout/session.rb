@@ -23,6 +23,10 @@ module Stripe
 
       OBJECT_NAME = "checkout.session"
 
+      def self.object_name
+        "checkout.session"
+      end
+
       # A Session can be expired when it is in one of these statuses: open
       #
       # After it expires, a customer can't complete a Session and customers loading the Session see a message saying the Session is expired.

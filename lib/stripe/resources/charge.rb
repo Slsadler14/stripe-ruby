@@ -14,6 +14,10 @@ module Stripe
 
     OBJECT_NAME = "charge"
 
+    def self.object_name
+      "charge"
+    end
+
     # Capture the payment of an existing, uncaptured charge that was created with the capture option set to false.
     #
     # Uncaptured payments expire a set number of days after they are created ([7 by default](https://stripe.com/docs/charges/placing-a-hold)), after which they are marked as refunded and capture attempts will fail.

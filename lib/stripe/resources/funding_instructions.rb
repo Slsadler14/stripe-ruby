@@ -10,6 +10,10 @@ module Stripe
   class FundingInstructions < APIResource
     OBJECT_NAME = "funding_instructions"
 
+    def self.object_name
+      "funding_instructions"
+    end
+
     def resource_url
       if !respond_to?(:customer) || customer.nil?
         raise NotImplementedError,

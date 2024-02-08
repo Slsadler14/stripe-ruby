@@ -14,6 +14,10 @@ module Stripe
 
       OBJECT_NAME = "radar.value_list"
 
+      def self.object_name
+        "radar.value_list"
+      end
+
       # Creates a new ValueList object, which can then be referenced in rules.
       def self.create(params = {}, opts = {})
         request_stripe_object(

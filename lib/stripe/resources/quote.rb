@@ -11,6 +11,10 @@ module Stripe
 
     OBJECT_NAME = "quote"
 
+    def self.object_name
+      "quote"
+    end
+
     # Accepts the specified quote.
     def accept(params = {}, opts = {})
       request_stripe_object(

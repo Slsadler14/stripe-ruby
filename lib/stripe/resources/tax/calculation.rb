@@ -11,6 +11,10 @@ module Stripe
 
       OBJECT_NAME = "tax.calculation"
 
+      def self.object_name
+        "tax.calculation"
+      end
+
       # Retrieves the line items of a persisted tax calculation as a collection.
       def list_line_items(params = {}, opts = {})
         request_stripe_object(

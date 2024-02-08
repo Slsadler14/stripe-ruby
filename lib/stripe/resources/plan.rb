@@ -18,6 +18,10 @@ module Stripe
 
     OBJECT_NAME = "plan"
 
+    def self.object_name
+      "plan"
+    end
+
     # You can now model subscriptions more flexibly using the [Prices API](https://stripe.com/docs/api#prices). It replaces the Plans API and is backwards compatible to simplify your migration.
     def self.create(params = {}, opts = {})
       request_stripe_object(method: :post, path: "/v1/plans", params: params, opts: opts)

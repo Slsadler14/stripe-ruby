@@ -14,6 +14,10 @@ module Stripe
 
     OBJECT_NAME = "topup"
 
+    def self.object_name
+      "topup"
+    end
+
     # Cancels a top-up. Only pending top-ups can be canceled.
     def cancel(params = {}, opts = {})
       request_stripe_object(

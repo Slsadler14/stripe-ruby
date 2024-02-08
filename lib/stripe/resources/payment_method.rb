@@ -14,6 +14,10 @@ module Stripe
 
     OBJECT_NAME = "payment_method"
 
+    def self.object_name
+      "payment_method"
+    end
+
     # Attaches a PaymentMethod object to a Customer.
     #
     # To attach a new PaymentMethod to a customer for future payments, we recommend you use a [SetupIntent](https://stripe.com/docs/api/setup_intents)

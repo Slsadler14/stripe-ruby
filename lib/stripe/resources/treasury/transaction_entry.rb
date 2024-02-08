@@ -9,6 +9,10 @@ module Stripe
 
       OBJECT_NAME = "treasury.transaction_entry"
 
+      def self.object_name
+        "treasury.transaction_entry"
+      end
+
       def self.resource_url
         "/v1/treasury/transaction_entries"
       end

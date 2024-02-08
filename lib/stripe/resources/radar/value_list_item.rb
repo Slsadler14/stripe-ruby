@@ -13,6 +13,10 @@ module Stripe
 
       OBJECT_NAME = "radar.value_list_item"
 
+      def self.object_name
+        "radar.value_list_item"
+      end
+
       # Creates a new ValueListItem object, which is added to the specified parent value list.
       def self.create(params = {}, opts = {})
         request_stripe_object(

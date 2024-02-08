@@ -15,6 +15,10 @@ module Stripe
 
     OBJECT_NAME = "customer"
 
+    def self.object_name
+      "customer"
+    end
+
     nested_resource_class_methods :balance_transaction, operations: %i[create retrieve update list]
     nested_resource_class_methods :cash_balance_transaction, operations: %i[retrieve list]
     nested_resource_class_methods :tax_id, operations: %i[create retrieve delete list]
@@ -189,6 +193,9 @@ module Stripe
 
     class TestHelpers < APIResourceTestHelpers
       RESOURCE_CLASS = Customer
+      def self.resource_class
+        "Customer"
+      end
 
       # Create an incoming testmode bank transfer
       def self.fund_cash_balance(customer, params = {}, opts = {})

@@ -12,6 +12,10 @@ module Stripe
 
       OBJECT_NAME = "treasury.outbound_payment"
 
+      def self.object_name
+        "treasury.outbound_payment"
+      end
+
       # Cancel an OutboundPayment.
       def cancel(params = {}, opts = {})
         request_stripe_object(
@@ -58,6 +62,9 @@ module Stripe
 
       class TestHelpers < APIResourceTestHelpers
         RESOURCE_CLASS = OutboundPayment
+        def self.resource_class
+          "OutboundPayment"
+        end
 
         # Transitions a test mode created OutboundPayment to the failed status. The OutboundPayment must already be in the processing state.
         def self.fail(id, params = {}, opts = {})

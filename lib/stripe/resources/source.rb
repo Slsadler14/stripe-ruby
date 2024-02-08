@@ -19,6 +19,10 @@ module Stripe
 
     OBJECT_NAME = "source"
 
+    def self.object_name
+      "source"
+    end
+
     nested_resource_class_methods :source_transaction, operations: %i[retrieve list]
 
     # Verify a given source.

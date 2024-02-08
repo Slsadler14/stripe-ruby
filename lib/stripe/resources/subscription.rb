@@ -13,6 +13,10 @@ module Stripe
 
     OBJECT_NAME = "subscription"
 
+    def self.object_name
+      "subscription"
+    end
+
     # Cancels a customer's subscription immediately. The customer will not be charged again for the subscription.
     #
     # Note, however, that any pending invoice items that you've created will still be charged for at the end of the period, unless manually [deleted](https://stripe.com/docs/api#delete_invoiceitem). If you've set the subscription to cancel at the end of the period, any pending prorations will also be left in place and collected at the end of the period. But if the subscription is set to cancel immediately, pending prorations will be removed.

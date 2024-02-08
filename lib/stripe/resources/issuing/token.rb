@@ -10,6 +10,10 @@ module Stripe
 
       OBJECT_NAME = "issuing.token"
 
+      def self.object_name
+        "issuing.token"
+      end
+
       # Lists all Issuing Token objects for a given card.
       def self.list(filters = {}, opts = {})
         request_stripe_object(method: :get, path: "/v1/issuing/tokens", params: filters, opts: opts)

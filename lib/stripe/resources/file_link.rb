@@ -12,6 +12,10 @@ module Stripe
 
     OBJECT_NAME = "file_link"
 
+    def self.object_name
+      "file_link"
+    end
+
     # Creates a new file link object.
     def self.create(params = {}, opts = {})
       request_stripe_object(method: :post, path: "/v1/file_links", params: params, opts: opts)

@@ -12,6 +12,10 @@ module Stripe
 
     OBJECT_NAME = "fee_refund"
 
+    def self.object_name
+      "fee_refund"
+    end
+
     def resource_url
       "#{ApplicationFee.resource_url}/#{CGI.escape(fee)}/refunds" \
         "/#{CGI.escape(id)}"

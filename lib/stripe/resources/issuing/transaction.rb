@@ -14,6 +14,10 @@ module Stripe
 
       OBJECT_NAME = "issuing.transaction"
 
+      def self.object_name
+        "issuing.transaction"
+      end
+
       # Returns a list of Issuing Transaction objects. The objects are sorted in descending order by creation date, with the most recently created object appearing first.
       def self.list(filters = {}, opts = {})
         request_stripe_object(
@@ -40,6 +44,9 @@ module Stripe
 
       class TestHelpers < APIResourceTestHelpers
         RESOURCE_CLASS = Transaction
+        def self.resource_class
+          "Transaction"
+        end
 
         # Allows the user to capture an arbitrary amount, also known as a forced capture.
         def self.create_force_capture(params = {}, opts = {})

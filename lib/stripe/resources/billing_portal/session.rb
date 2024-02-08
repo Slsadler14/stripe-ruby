@@ -22,6 +22,10 @@ module Stripe
 
       OBJECT_NAME = "billing_portal.session"
 
+      def self.object_name
+        "billing_portal.session"
+      end
+
       # Creates a session of the customer portal.
       def self.create(params = {}, opts = {})
         request_stripe_object(

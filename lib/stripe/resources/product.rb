@@ -19,6 +19,10 @@ module Stripe
 
     OBJECT_NAME = "product"
 
+    def self.object_name
+      "product"
+    end
+
     # Creates a new product object.
     def self.create(params = {}, opts = {})
       request_stripe_object(method: :post, path: "/v1/products", params: params, opts: opts)

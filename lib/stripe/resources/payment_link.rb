@@ -14,6 +14,10 @@ module Stripe
 
     OBJECT_NAME = "payment_link"
 
+    def self.object_name
+      "payment_link"
+    end
+
     # When retrieving a payment link, there is an includable line_items property containing the first handful of those items. There is also a URL where you can retrieve the full (paginated) list of line items.
     def list_line_items(params = {}, opts = {})
       request_stripe_object(

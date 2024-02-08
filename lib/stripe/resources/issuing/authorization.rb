@@ -14,6 +14,10 @@ module Stripe
 
       OBJECT_NAME = "issuing.authorization"
 
+      def self.object_name
+        "issuing.authorization"
+      end
+
       # [Deprecated] Approves a pending Issuing Authorization object. This request should be made within the timeout window of the [real-time authorization](https://stripe.com/docs/issuing/controls/real-time-authorizations) flow.
       # This method is deprecated. Instead, [respond directly to the webhook request to approve an authorization](https://stripe.com/docs/issuing/controls/real-time-authorizations#authorization-handling).
       def approve(params = {}, opts = {})
@@ -84,6 +88,9 @@ module Stripe
 
       class TestHelpers < APIResourceTestHelpers
         RESOURCE_CLASS = Authorization
+        def self.resource_class
+          "Authorization"
+        end
 
         # Capture a test-mode authorization.
         def self.capture(authorization, params = {}, opts = {})

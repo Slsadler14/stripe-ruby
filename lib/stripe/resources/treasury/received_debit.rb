@@ -9,6 +9,10 @@ module Stripe
 
       OBJECT_NAME = "treasury.received_debit"
 
+      def self.object_name
+        "treasury.received_debit"
+      end
+
       # Returns a list of ReceivedDebits.
       def self.list(filters = {}, opts = {})
         request_stripe_object(
@@ -25,6 +29,9 @@ module Stripe
 
       class TestHelpers < APIResourceTestHelpers
         RESOURCE_CLASS = ReceivedDebit
+        def self.resource_class
+          "ReceivedDebit"
+        end
 
         # Use this endpoint to simulate a test mode ReceivedDebit initiated by a third party. In live mode, you can't directly create ReceivedDebits initiated by third parties.
         def self.create(params = {}, opts = {})

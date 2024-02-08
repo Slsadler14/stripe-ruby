@@ -12,6 +12,10 @@ module Stripe
 
       OBJECT_NAME = "terminal.configuration"
 
+      def self.object_name
+        "terminal.configuration"
+      end
+
       # Creates a new Configuration object.
       def self.create(params = {}, opts = {})
         request_stripe_object(

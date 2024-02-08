@@ -12,6 +12,10 @@ module Stripe
 
     OBJECT_NAME = "tax_rate"
 
+    def self.object_name
+      "tax_rate"
+    end
+
     # Creates a new tax rate.
     def self.create(params = {}, opts = {})
       request_stripe_object(method: :post, path: "/v1/tax_rates", params: params, opts: opts)

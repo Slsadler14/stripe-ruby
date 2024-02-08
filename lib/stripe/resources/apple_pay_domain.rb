@@ -10,6 +10,10 @@ module Stripe
 
     OBJECT_NAME = "apple_pay_domain"
 
+    def self.object_name
+      "apple_pay_domain"
+    end
+
     def self.resource_url
       "/v1/apple_pay/domains"
     end

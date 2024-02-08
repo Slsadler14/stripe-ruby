@@ -14,6 +14,10 @@ module Stripe
 
     OBJECT_NAME = "card"
 
+    def self.object_name
+      "card"
+    end
+
     def resource_url
       if respond_to?(:customer) && !customer.nil? && !customer.empty?
         "#{Customer.resource_url}/#{CGI.escape(customer)}/sources/#{CGI.escape(id)}"

@@ -9,6 +9,10 @@ module Stripe
 
       OBJECT_NAME = "financial_connections.account"
 
+      def self.object_name
+        "financial_connections.account"
+      end
+
       # Disables your access to a Financial Connections Account. You will no longer be able to access data associated with the account (e.g. balances, transactions).
       def disconnect(params = {}, opts = {})
         request_stripe_object(

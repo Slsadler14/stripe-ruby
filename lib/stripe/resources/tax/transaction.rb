@@ -9,6 +9,10 @@ module Stripe
     class Transaction < APIResource
       OBJECT_NAME = "tax.transaction"
 
+      def self.object_name
+        "tax.transaction"
+      end
+
       # Retrieves the line items of a committed standalone transaction as a collection.
       def list_line_items(params = {}, opts = {})
         request_stripe_object(

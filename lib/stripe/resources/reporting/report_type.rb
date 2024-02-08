@@ -16,6 +16,10 @@ module Stripe
 
       OBJECT_NAME = "reporting.report_type"
 
+      def self.object_name
+        "reporting.report_type"
+      end
+
       # Returns a full list of Report Types.
       def self.list(filters = {}, opts = {})
         request_stripe_object(

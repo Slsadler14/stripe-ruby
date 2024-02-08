@@ -19,6 +19,10 @@ module Stripe
 
       OBJECT_NAME = "identity.verification_report"
 
+      def self.object_name
+        "identity.verification_report"
+      end
+
       # List all verification reports.
       def self.list(filters = {}, opts = {})
         request_stripe_object(

@@ -9,6 +9,10 @@ module Stripe
 
       OBJECT_NAME = "financial_connections.session"
 
+      def self.object_name
+        "financial_connections.session"
+      end
+
       # To launch the Financial Connections authorization flow, create a Session. The session's client_secret can be used to launch the flow using Stripe.js.
       def self.create(params = {}, opts = {})
         request_stripe_object(

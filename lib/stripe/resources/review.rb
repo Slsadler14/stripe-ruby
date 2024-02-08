@@ -11,6 +11,10 @@ module Stripe
 
     OBJECT_NAME = "review"
 
+    def self.object_name
+      "review"
+    end
+
     # Approves a Review object, closing it and removing it from the list of reviews.
     def approve(params = {}, opts = {})
       request_stripe_object(

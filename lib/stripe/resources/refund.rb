@@ -14,6 +14,10 @@ module Stripe
 
     OBJECT_NAME = "refund"
 
+    def self.object_name
+      "refund"
+    end
+
     # Cancels a refund with a status of requires_action.
     #
     # You can't cancel refunds in other states. Only refunds for payment methods that require customer action can enter the requires_action state.
@@ -80,6 +84,9 @@ module Stripe
 
     class TestHelpers < APIResourceTestHelpers
       RESOURCE_CLASS = Refund
+      def self.resource_class
+        "Refund"
+      end
 
       # Expire a refund with a status of requires_action.
       def self.expire(refund, params = {}, opts = {})

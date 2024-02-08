@@ -16,6 +16,10 @@ module Stripe
 
     OBJECT_NAME = "price"
 
+    def self.object_name
+      "price"
+    end
+
     # Creates a new price for an existing product. The price can be recurring or one-time.
     def self.create(params = {}, opts = {})
       request_stripe_object(method: :post, path: "/v1/prices", params: params, opts: opts)

@@ -11,6 +11,10 @@ module Stripe
 
     OBJECT_NAME = "shipping_rate"
 
+    def self.object_name
+      "shipping_rate"
+    end
+
     # Creates a new shipping rate object.
     def self.create(params = {}, opts = {})
       request_stripe_object(method: :post, path: "/v1/shipping_rates", params: params, opts: opts)

@@ -30,6 +30,10 @@ module Stripe
 
     OBJECT_NAME = "setup_intent"
 
+    def self.object_name
+      "setup_intent"
+    end
+
     # You can cancel a SetupIntent object when it's in one of these statuses: requires_payment_method, requires_confirmation, or requires_action.
     #
     # After you cancel it, setup is abandoned and any operations on the SetupIntent fail with an error.

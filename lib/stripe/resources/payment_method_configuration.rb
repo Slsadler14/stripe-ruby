@@ -23,6 +23,10 @@ module Stripe
 
     OBJECT_NAME = "payment_method_configuration"
 
+    def self.object_name
+      "payment_method_configuration"
+    end
+
     # Creates a payment method configuration
     def self.create(params = {}, opts = {})
       request_stripe_object(

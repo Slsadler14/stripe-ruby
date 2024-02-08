@@ -6,6 +6,10 @@ module Stripe
   class CashBalance < APIResource
     OBJECT_NAME = "cash_balance"
 
+    def self.object_name
+      "cash_balance"
+    end
+
     def resource_url
       if !respond_to?(:customer) || customer.nil?
         raise NotImplementedError,

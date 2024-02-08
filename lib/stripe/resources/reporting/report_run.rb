@@ -17,6 +17,10 @@ module Stripe
 
       OBJECT_NAME = "reporting.report_run"
 
+      def self.object_name
+        "reporting.report_run"
+      end
+
       # Creates a new object and begin running the report. (Certain report types require a [live-mode API key](https://stripe.com/docs/keys#test-live-modes).)
       def self.create(params = {}, opts = {})
         request_stripe_object(

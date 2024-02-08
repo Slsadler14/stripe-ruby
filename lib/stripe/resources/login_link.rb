@@ -6,6 +6,10 @@ module Stripe
   class LoginLink < APIResource
     OBJECT_NAME = "login_link"
 
+    def self.object_name
+      "login_link"
+    end
+
     def self.retrieve(_id, _opts = nil)
       raise NotImplementedError,
             "Login links do not have IDs and cannot be retrieved. They can " \

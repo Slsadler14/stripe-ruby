@@ -13,6 +13,10 @@ module Stripe
 
     OBJECT_NAME = "subscription_item"
 
+    def self.object_name
+      "subscription_item"
+    end
+
     nested_resource_class_methods :usage_record, operations: %i[create]
     nested_resource_class_methods :usage_record_summary,
                                   operations: %i[list],

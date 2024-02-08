@@ -11,6 +11,10 @@ module Stripe
 
     OBJECT_NAME = "setup_attempt"
 
+    def self.object_name
+      "setup_attempt"
+    end
+
     # Returns a list of SetupAttempts that associate with a provided SetupIntent.
     def self.list(filters = {}, opts = {})
       request_stripe_object(method: :get, path: "/v1/setup_attempts", params: filters, opts: opts)

@@ -12,6 +12,10 @@ module Stripe
 
     OBJECT_NAME = "credit_note"
 
+    def self.object_name
+      "credit_note"
+    end
+
     # Marks a credit note as void. Learn more about [voiding credit notes](https://stripe.com/docs/billing/invoices/credit-notes#voiding).
     def void_credit_note(params = {}, opts = {})
       request_stripe_object(

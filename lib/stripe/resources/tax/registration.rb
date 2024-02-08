@@ -15,6 +15,10 @@ module Stripe
 
       OBJECT_NAME = "tax.registration"
 
+      def self.object_name
+        "tax.registration"
+      end
+
       # Creates a new Tax Registration object.
       def self.create(params = {}, opts = {})
         request_stripe_object(
