@@ -586,6 +586,7 @@ module Stripe
         def self.object_name
           "hello"
         end
+
         def say_hello(params = {}, opts = {})
           request_stripe_object(
             method: :post,
@@ -666,6 +667,7 @@ module Stripe
         def self.object_name
           "stream"
         end
+
         def read_stream(params = {}, opts = {}, &read_body_chunk_block)
           request_stream(
             method: :get,
