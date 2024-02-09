@@ -10,7 +10,6 @@ module Stripe
     include Stripe::APIOperations::Save
 
     OBJECT_NAME = "promotion_code"
-
     def self.object_name
       "promotion_code"
     end

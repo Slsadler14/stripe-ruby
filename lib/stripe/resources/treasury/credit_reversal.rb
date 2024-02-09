@@ -9,7 +9,6 @@ module Stripe
       extend Stripe::APIOperations::List
 
       OBJECT_NAME = "treasury.credit_reversal"
-
       def self.object_name
         "treasury.credit_reversal"
       end

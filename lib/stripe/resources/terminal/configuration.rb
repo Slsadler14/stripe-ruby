@@ -11,7 +11,6 @@ module Stripe
       include Stripe::APIOperations::Save
 
       OBJECT_NAME = "terminal.configuration"
-
       def self.object_name
         "terminal.configuration"
       end

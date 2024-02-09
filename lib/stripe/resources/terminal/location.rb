@@ -13,7 +13,6 @@ module Stripe
       include Stripe::APIOperations::Save
 
       OBJECT_NAME = "terminal.location"
-
       def self.object_name
         "terminal.location"
       end

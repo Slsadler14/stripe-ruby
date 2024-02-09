@@ -16,7 +16,6 @@ module Stripe
     include Stripe::APIOperations::Save
 
     OBJECT_NAME = "payout"
-
     def self.object_name
       "payout"
     end

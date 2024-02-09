@@ -13,7 +13,6 @@ module Stripe
       include Stripe::APIOperations::Save
 
       OBJECT_NAME = "issuing.authorization"
-
       def self.object_name
         "issuing.authorization"
       end

@@ -13,7 +13,6 @@ module Stripe
       include Stripe::APIOperations::Save
 
       OBJECT_NAME = "terminal.reader"
-
       def self.object_name
         "terminal.reader"
       end

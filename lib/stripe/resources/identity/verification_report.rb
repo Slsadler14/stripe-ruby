@@ -18,7 +18,6 @@ module Stripe
       extend Stripe::APIOperations::List
 
       OBJECT_NAME = "identity.verification_report"
-
       def self.object_name
         "identity.verification_report"
       end

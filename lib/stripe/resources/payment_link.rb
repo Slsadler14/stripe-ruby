@@ -13,7 +13,6 @@ module Stripe
     include Stripe::APIOperations::Save
 
     OBJECT_NAME = "payment_link"
-
     def self.object_name
       "payment_link"
     end

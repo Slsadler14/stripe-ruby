@@ -14,7 +14,6 @@ module Stripe
     extend Stripe::APIOperations::List
 
     OBJECT_NAME = "file"
-
     def self.object_name
       "file"
     end

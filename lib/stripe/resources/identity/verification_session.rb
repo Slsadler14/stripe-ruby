@@ -20,7 +20,6 @@ module Stripe
       include Stripe::APIOperations::Save
 
       OBJECT_NAME = "identity.verification_session"
-
       def self.object_name
         "identity.verification_session"
       end

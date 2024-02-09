@@ -9,7 +9,6 @@ module Stripe
     include Stripe::APIOperations::Save
 
     OBJECT_NAME = "capability"
-
     def self.object_name
       "capability"
     end

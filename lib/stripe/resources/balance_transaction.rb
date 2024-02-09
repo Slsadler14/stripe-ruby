@@ -10,7 +10,6 @@ module Stripe
     extend Stripe::APIOperations::List
 
     OBJECT_NAME = "balance_transaction"
-
     def self.object_name
       "balance_transaction"
     end

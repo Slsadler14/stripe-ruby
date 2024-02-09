@@ -19,7 +19,6 @@ module Stripe
     extend Stripe::APIOperations::NestedResource
 
     OBJECT_NAME = "transfer"
-
     def self.object_name
       "transfer"
     end

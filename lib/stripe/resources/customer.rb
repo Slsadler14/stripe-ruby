@@ -14,7 +14,6 @@ module Stripe
     extend Stripe::APIOperations::NestedResource
 
     OBJECT_NAME = "customer"
-
     def self.object_name
       "customer"
     end

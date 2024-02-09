@@ -7,7 +7,6 @@ module Stripe
     include Stripe::APIOperations::Delete
 
     OBJECT_NAME = "ephemeral_key"
-
     def self.object_name
       "ephemeral_key"
     end

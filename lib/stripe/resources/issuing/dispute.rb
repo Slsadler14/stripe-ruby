@@ -12,7 +12,6 @@ module Stripe
       include Stripe::APIOperations::Save
 
       OBJECT_NAME = "issuing.dispute"
-
       def self.object_name
         "issuing.dispute"
       end

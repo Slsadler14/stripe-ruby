@@ -19,7 +19,6 @@ module Stripe
     include Stripe::APIOperations::Save
 
     OBJECT_NAME = "transfer_reversal"
-
     def self.object_name
       "transfer_reversal"
     end

@@ -8,7 +8,6 @@ module Stripe
       extend Stripe::APIOperations::Create
 
       OBJECT_NAME = "financial_connections.session"
-
       def self.object_name
         "financial_connections.session"
       end

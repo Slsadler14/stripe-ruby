@@ -36,7 +36,6 @@ module Stripe
     extend Stripe::APIOperations::List
 
     OBJECT_NAME = "event"
-
     def self.object_name
       "event"
     end

@@ -12,7 +12,6 @@ module Stripe
     include Stripe::APIOperations::Save
 
     OBJECT_NAME = "subscription"
-
     def self.object_name
       "subscription"
     end

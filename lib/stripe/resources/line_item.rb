@@ -5,7 +5,6 @@ module Stripe
   # A line item.
   class LineItem < APIResource
     OBJECT_NAME = "item"
-
     def self.object_name
       "item"
     end

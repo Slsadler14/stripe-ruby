@@ -9,7 +9,6 @@ module Stripe
       extend Stripe::APIOperations::List
 
       OBJECT_NAME = "climate.product"
-
       def self.object_name
         "climate.product"
       end

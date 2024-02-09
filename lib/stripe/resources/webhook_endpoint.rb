@@ -16,7 +16,6 @@ module Stripe
     include Stripe::APIOperations::Save
 
     OBJECT_NAME = "webhook_endpoint"
-
     def self.object_name
       "webhook_endpoint"
     end

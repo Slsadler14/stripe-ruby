@@ -13,7 +13,6 @@ module Stripe
     include Stripe::APIOperations::Save
 
     OBJECT_NAME = "refund"
-
     def self.object_name
       "refund"
     end

@@ -10,7 +10,6 @@ module Stripe
       include Stripe::APIOperations::Save
 
       OBJECT_NAME = "issuing.card"
-
       def self.object_name
         "issuing.card"
       end

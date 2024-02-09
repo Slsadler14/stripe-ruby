@@ -10,7 +10,6 @@ module Stripe
     include Stripe::APIOperations::Delete
 
     OBJECT_NAME = "tax_id"
-
     def self.object_name
       "tax_id"
     end

@@ -5,7 +5,6 @@ module Stripe
   # The credit note line item object
   class CreditNoteLineItem < StripeObject
     OBJECT_NAME = "credit_note_line_item"
-
     def self.object_name
       "credit_note_line_item"
     end

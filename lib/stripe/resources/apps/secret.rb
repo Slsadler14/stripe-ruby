@@ -17,7 +17,6 @@ module Stripe
       extend Stripe::APIOperations::List
 
       OBJECT_NAME = "apps.secret"
-
       def self.object_name
         "apps.secret"
       end

@@ -11,7 +11,6 @@ module Stripe
     include Stripe::APIOperations::Save
 
     OBJECT_NAME = "file_link"
-
     def self.object_name
       "file_link"
     end

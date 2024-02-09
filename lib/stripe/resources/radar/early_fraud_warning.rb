@@ -11,7 +11,6 @@ module Stripe
       extend Stripe::APIOperations::List
 
       OBJECT_NAME = "radar.early_fraud_warning"
-
       def self.object_name
         "radar.early_fraud_warning"
       end

@@ -10,7 +10,6 @@ module Stripe
     extend Stripe::APIOperations::List
 
     OBJECT_NAME = "setup_attempt"
-
     def self.object_name
       "setup_attempt"
     end

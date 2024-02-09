@@ -13,7 +13,6 @@ module Stripe
     extend Stripe::APIOperations::Create
 
     OBJECT_NAME = "account_session"
-
     def self.object_name
       "account_session"
     end

@@ -13,7 +13,6 @@ module Stripe
       include Stripe::APIOperations::Save
 
       OBJECT_NAME = "radar.value_list"
-
       def self.object_name
         "radar.value_list"
       end

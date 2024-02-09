@@ -32,7 +32,6 @@ module Stripe
     extend Stripe::APIOperations::List
 
     OBJECT_NAME = "exchange_rate"
-
     def self.object_name
       "exchange_rate"
     end

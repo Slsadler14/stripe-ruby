@@ -10,7 +10,6 @@ module Stripe
       include Stripe::APIOperations::SingletonSave
 
       OBJECT_NAME = "tax.settings"
-
       def self.object_name
         "tax.settings"
       end

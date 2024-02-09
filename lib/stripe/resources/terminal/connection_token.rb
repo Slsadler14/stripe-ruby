@@ -10,7 +10,6 @@ module Stripe
       extend Stripe::APIOperations::Create
 
       OBJECT_NAME = "terminal.connection_token"
-
       def self.object_name
         "terminal.connection_token"
       end

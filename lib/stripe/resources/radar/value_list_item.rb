@@ -12,7 +12,6 @@ module Stripe
       extend Stripe::APIOperations::List
 
       OBJECT_NAME = "radar.value_list_item"
-
       def self.object_name
         "radar.value_list_item"
       end

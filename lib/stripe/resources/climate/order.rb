@@ -11,7 +11,6 @@ module Stripe
       include Stripe::APIOperations::Save
 
       OBJECT_NAME = "climate.order"
-
       def self.object_name
         "climate.order"
       end

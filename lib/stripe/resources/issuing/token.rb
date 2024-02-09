@@ -9,7 +9,6 @@ module Stripe
       include Stripe::APIOperations::Save
 
       OBJECT_NAME = "issuing.token"
-
       def self.object_name
         "issuing.token"
       end

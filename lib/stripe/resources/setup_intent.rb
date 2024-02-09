@@ -29,7 +29,6 @@ module Stripe
     include Stripe::APIOperations::Save
 
     OBJECT_NAME = "setup_intent"
-
     def self.object_name
       "setup_intent"
     end

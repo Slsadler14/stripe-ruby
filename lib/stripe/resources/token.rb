@@ -26,7 +26,6 @@ module Stripe
     extend Stripe::APIOperations::Create
 
     OBJECT_NAME = "token"
-
     def self.object_name
       "token"
     end

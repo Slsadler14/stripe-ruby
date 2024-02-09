@@ -12,7 +12,6 @@ module Stripe
       extend Stripe::APIOperations::List
 
       OBJECT_NAME = "test_helpers.test_clock"
-
       def self.object_name
         "test_helpers.test_clock"
       end

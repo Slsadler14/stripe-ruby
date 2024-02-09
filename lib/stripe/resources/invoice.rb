@@ -42,7 +42,6 @@ module Stripe
     include Stripe::APIOperations::Save
 
     OBJECT_NAME = "invoice"
-
     def self.object_name
       "invoice"
     end

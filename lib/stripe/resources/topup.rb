@@ -13,7 +13,6 @@ module Stripe
     include Stripe::APIOperations::Save
 
     OBJECT_NAME = "topup"
-
     def self.object_name
       "topup"
     end

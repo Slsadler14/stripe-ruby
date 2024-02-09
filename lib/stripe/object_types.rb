@@ -2,6 +2,7 @@
 # frozen_string_literal: true
 
 # rubocop:disable Metrics/MethodLength
+# rubocop:disable Metrics/AbcSize
 
 module Stripe
   module ObjectTypes
@@ -134,4 +135,5 @@ module Stripe
   end
 end
 
+# rubocop:enable Metrics/AbcSize
 # rubocop:enable Metrics/MethodLength

@@ -22,7 +22,6 @@ module Stripe
     include Stripe::APIOperations::Save
 
     OBJECT_NAME = "payment_method_configuration"
-
     def self.object_name
       "payment_method_configuration"
     end

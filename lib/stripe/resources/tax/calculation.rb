@@ -10,7 +10,6 @@ module Stripe
       extend Stripe::APIOperations::Create
 
       OBJECT_NAME = "tax.calculation"
-
       def self.object_name
         "tax.calculation"
       end

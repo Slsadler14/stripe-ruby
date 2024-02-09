@@ -8,7 +8,6 @@ module Stripe
       extend Stripe::APIOperations::List
 
       OBJECT_NAME = "treasury.transaction_entry"
-
       def self.object_name
         "treasury.transaction_entry"
       end

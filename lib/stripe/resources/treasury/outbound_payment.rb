@@ -11,7 +11,6 @@ module Stripe
       extend Stripe::APIOperations::List
 
       OBJECT_NAME = "treasury.outbound_payment"
-
       def self.object_name
         "treasury.outbound_payment"
       end

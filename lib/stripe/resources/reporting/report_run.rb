@@ -16,7 +16,6 @@ module Stripe
       extend Stripe::APIOperations::List
 
       OBJECT_NAME = "reporting.report_run"
-
       def self.object_name
         "reporting.report_run"
       end

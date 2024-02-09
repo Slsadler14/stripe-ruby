@@ -10,7 +10,6 @@ module Stripe
     include Stripe::APIOperations::Save
 
     OBJECT_NAME = "quote"
-
     def self.object_name
       "quote"
     end
