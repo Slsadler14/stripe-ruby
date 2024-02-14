@@ -13,4 +13,5 @@ IRB.conf[:AUTO_INDENT] = true
 
 puts "Loaded gem 'stripe'"
 
-IRB.start
+IRB.
+start
